@@ -141,13 +141,18 @@ public class EmployeePayrollSystem {
             System.out.println("\n MENU");
             System.out.println();
             System.out.println("1. Add Employee");
-            System.out.println("2. Delete Employee \n");
+            System.out.println("2. Delete Employee3");
+            System.out.println("3. Exit ");
             int Operation = sc.nextInt();
 
             if(Operation == 2 ) {
                 System.out.println("Enter the ID of employee which to be Deleted... ");
                 int DeletingEmployee = sc.nextInt();
-                payrollSystem.removeEmployee(DeletingEmployee);  // Try removing a valid ID here
+                payrollSystem.removeEmployee(DeletingEmployee);  // removing a valid ID here
+            }
+            else if (Operation == 3){
+                System.out.println("You Have Sucessfully Exited");
+                return ;
             }
             else if (Operation == 1) {
                 System.out.print("Enter the number of Employees: ");
