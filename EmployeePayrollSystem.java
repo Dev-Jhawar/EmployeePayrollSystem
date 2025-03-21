@@ -129,20 +129,28 @@ public class EmployeePayrollSystem {
             }
         }
 
-        System.out.println("\nInitial Employee Details:");
-        payrollSystem.displayEmployees();
+        
 
         // System.out.println("\nRemoving Employee...");
         // // payrollSystem.removeEmployee(101);  // Try removing a valid ID here
 
 
-        for(int i=1;i<=2; i++){
+
+
+            
+            System.out.println("\n Do you want to Perform any Action (y/n) : ");
+           
+            char operationCode = sc.next().charAt(0);
+
+
+        while(operationCode == 'y'|| operationCode == 'Y'){
             System.out.println();
             System.out.println("\n MENU");
             System.out.println();
             System.out.println("1. Add Employee");
-            System.out.println("2. Delete Employee3");
-            System.out.println("3. Exit ");
+            System.out.println("2. Delete Employee");
+            System.out.println("3. Show Employees");
+            System.out.println("4. Exit ");
             int Operation = sc.nextInt();
 
             if(Operation == 2 ) {
@@ -150,9 +158,13 @@ public class EmployeePayrollSystem {
                 int DeletingEmployee = sc.nextInt();
                 payrollSystem.removeEmployee(DeletingEmployee);  // removing a valid ID here
             }
-            else if (Operation == 3){
+            else if (Operation == 3) {
+                System.out.println("\nInitial Employee Details:");
+                payrollSystem.displayEmployees();
+            }
+            else if (Operation == 4){
                 System.out.println("You Have Sucessfully Exited");
-                return ;
+                return;
             }
             else if (Operation == 1) {
                 System.out.print("Enter the number of Employees: ");
@@ -189,7 +201,7 @@ public class EmployeePayrollSystem {
                 }
             }
             else{
-                System.out.println("Enter A valid Operation ID ");
+                System.out.println("Invalid Operation ID : "+Operation);
             }
         }
 
