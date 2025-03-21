@@ -196,7 +196,6 @@ public class EmployeePayrollSystem {
             }
         }
 
-        
         System.out.println("\nRemaining Employee Details:");
         payrollSystem.displayEmployees();
 
