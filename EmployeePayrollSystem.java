@@ -91,22 +91,22 @@ class PayrollSystem {
 
 public class EmployeePayrollSystem {
     public static void main(String[] args) {
+
         PayrollSystem payrollSystem = new PayrollSystem();
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the number of Employees: ");
         int n = sc.nextInt();
-        sc.nextLine();  // Consume the leftover newline character
+        sc.nextLine(); 
 
         int EmpID = 101;
 
         for (int i = 1; i <= n; i++) {
-            System.out.println("Enter the details of the Employee no  : "+i);
+
+            System.out.println("Enter the details of the Employee no  : " + i);
             System.out.print("Name: ");
             String Ename = sc.nextLine();
-            // System.out.print("ID: ");
-            // int id = sc.nextInt();
-            // sc.nextLine();  // Consume the leftover newline character
+            
             System.out.print("Type (Full time/Part time): ");
             String type = sc.nextLine();
 
@@ -117,12 +117,13 @@ public class EmployeePayrollSystem {
                 FullTimeEmployee emp = new FullTimeEmployee(Ename, EmpID, sal);
                 payrollSystem.addEmployee(emp);
                 EmpID++;
-            } else {
+            } 
+            else {
                 System.out.print("Enter hours worked: ");
                 int Hours = sc.nextInt();
                 System.out.print("Enter hourly rate: ");
                 float Rate = sc.nextFloat();
-                sc.nextLine();  // Consume the leftover newline character
+                sc.nextLine(); 
                 PartTimeEmployee emp = new PartTimeEmployee(Ename, EmpID, Hours, Rate);
                 payrollSystem.addEmployee(emp);
                 EmpID++;
@@ -130,23 +131,14 @@ public class EmployeePayrollSystem {
         }
 
         
-
-        // System.out.println("\nRemoving Employee...");
-        // // payrollSystem.removeEmployee(101);  // Try removing a valid ID here
-
-
-
-
-            
-            System.out.println("\n Do you want to Perform any Action (y/n) : ");
-           
-            char operationCode = sc.next().charAt(0);
+        System.out.println("\n Do you want to Perform any Action (y/n) : ");
+        char operationCode = sc.next().charAt(0);
 
 
         while(operationCode == 'y'|| operationCode == 'Y'){
+
             System.out.println();
-            System.out.println("\n MENU");
-            System.out.println();
+            System.out.println("\n MENU \n");
             System.out.println("1. Add Employee");
             System.out.println("2. Delete Employee");
             System.out.println("3. Show Employees");
@@ -156,7 +148,7 @@ public class EmployeePayrollSystem {
             if(Operation == 2 ) {
                 System.out.println("Enter the ID of employee which to be Deleted... ");
                 int DeletingEmployee = sc.nextInt();
-                payrollSystem.removeEmployee(DeletingEmployee);  // removing a valid ID here
+                payrollSystem.removeEmployee(DeletingEmployee);  // removing ID here
             }
             else if (Operation == 3) {
                 System.out.println("\nInitial Employee Details:");
@@ -169,15 +161,13 @@ public class EmployeePayrollSystem {
             else if (Operation == 1) {
                 System.out.print("Enter the number of Employees: ");
                 int addingEmp = sc.nextInt();
-                sc.nextLine();  // Consume the leftover newline character
+                sc.nextLine();  
 
                 for (int j = 1; j <= addingEmp; j++) {
                     System.out.println("Enter the details of the Employee no  : "+j);
                     System.out.print("Name: ");
                     String Ename = sc.nextLine();
-                    // System.out.print("ID: ");
-                    // int id = sc.nextInt();
-                    // sc.nextLine();  // Consume the leftover newline character
+                    
                     System.out.print("Type (Full time/Part time): ");
                     String type = sc.nextLine();
 
@@ -188,12 +178,13 @@ public class EmployeePayrollSystem {
                         FullTimeEmployee emp = new FullTimeEmployee(Ename, EmpID, sal);
                         payrollSystem.addEmployee(emp);
                         EmpID++;
-                    } else {
+                    } 
+                    else {
                         System.out.print("Enter hours worked: ");
                         int Hours = sc.nextInt();
                         System.out.print("Enter hourly rate: ");
                         float Rate = sc.nextFloat();
-                        sc.nextLine();  // Consume the leftover newline character
+                        sc.nextLine(); 
                         PartTimeEmployee emp = new PartTimeEmployee(Ename, EmpID, Hours, Rate);
                         payrollSystem.addEmployee(emp);
                         EmpID++;
