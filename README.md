@@ -18,6 +18,7 @@ src/
 ├── PayrollSystem (manages Employee list)
 
 └── EmployeeUse (main application entry)
+\n
 
 - Employee: Defines shared fields (name, ID) and abstract calculateSalary() & toString() methods.
 
@@ -27,7 +28,7 @@ src/
 
 - PayrollSystem: Allows adding/removing employees and displaying payroll info.
 
-> EmployeeUse: Demonstrates system usage—creating, managing, and displaying employees.
+- EmployeeUse: Demonstrates system usage—creating, managing, and displaying employees.
 
 ⭐ Features
 
