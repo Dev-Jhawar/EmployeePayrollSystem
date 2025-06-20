@@ -20,6 +20,7 @@ src/
 └── EmployeeUse (main application entry)
 
 <br>
+
 - Employee: Defines shared fields (name, ID) and abstract calculateSalary() & toString() methods.
 
 - FullTimeEmployee: Stores a fixed monthly salary.
