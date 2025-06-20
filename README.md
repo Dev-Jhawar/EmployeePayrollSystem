@@ -18,8 +18,8 @@ src/
 ├── PayrollSystem (manages Employee list)
 
 └── EmployeeUse (main application entry)
-\n
 
+<br>
 - Employee: Defines shared fields (name, ID) and abstract calculateSalary() & toString() methods.
 
 - FullTimeEmployee: Stores a fixed monthly salary.
