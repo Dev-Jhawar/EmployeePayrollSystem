@@ -1,5 +1,7 @@
 Employee Payroll System
+
 🚀 Introduction
+
 A Java-based console payroll management application demonstrating key OOP principles—abstraction, inheritance, encapsulation, and polymorphism. 
 Supports handling both full-time and part-time employees through a flexible, extensible structure.
 
@@ -7,12 +9,18 @@ Supports handling both full-time and part-time employees through a flexible, ext
 java
 Copy
 Edit
+
 src/
 ├── Employee (abstract)
+
 ├── FullTimeEmployee (extends Employee)
+
 ├── PartTimeEmployee (extends Employee)
+
 ├── PayrollSystem (manages Employee list)
+
 └── EmployeeUse (main application entry)
+
 Employee: Defines shared fields (name, ID) and abstract calculateSalary() & toString() methods.
 
 FullTimeEmployee: Stores a fixed monthly salary.
