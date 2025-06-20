@@ -23,18 +23,18 @@ src/
 
 - FullTimeEmployee: Stores a fixed monthly salary.
 
-> PartTimeEmployee: Tracks hours worked and hourly rate.
+- PartTimeEmployee: Tracks hours worked and hourly rate.
 
-> PayrollSystem: Allows adding/removing employees and displaying payroll info.
+- PayrollSystem: Allows adding/removing employees and displaying payroll info.
 
 > EmployeeUse: Demonstrates system usage—creating, managing, and displaying employees.
 
 ⭐ Features
 
-> OOP Techniques: Uses abstraction, inheritance, and polymorphism.
+- OOP Techniques: Uses abstraction, inheritance, and polymorphism.
 
-> Multiple Employee Types: Supports full-time (fixed salary) and part-time (hourly wage) employees.
+- Multiple Employee Types: Supports full-time (fixed salary) and part-time (hourly wage) employees.
 
-> Dynamic Payroll Management: Add, delete, and list employees via PayrollSystem.
+- Dynamic Payroll Management: Add, delete, and list employees via PayrollSystem.
 
-> Console-Based Demo: EmployeeUse showcases typical workflow.
+- Console-Based Demo: EmployeeUse showcases typical workflow.
