@@ -19,9 +19,9 @@ src/
 
 └── EmployeeUse (main application entry)
 
-> Employee: Defines shared fields (name, ID) and abstract calculateSalary() & toString() methods.
+- Employee: Defines shared fields (name, ID) and abstract calculateSalary() & toString() methods.
 
-> FullTimeEmployee: Stores a fixed monthly salary.
+- FullTimeEmployee: Stores a fixed monthly salary.
 
 > PartTimeEmployee: Tracks hours worked and hourly rate.
 
