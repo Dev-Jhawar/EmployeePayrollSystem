@@ -1,5 +1,4 @@
 
-
 🚀 Introduction
 
 A Java-based console payroll management application demonstrating key OOP principles—abstraction, inheritance, encapsulation, and polymorphism. 
