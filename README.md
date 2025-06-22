@@ -2,6 +2,7 @@
 
 A Java-based console payroll management application demonstrating key OOP principles—abstraction, inheritance, encapsulation, and polymorphism. 
 Supports handling both full-time and part-time employees through a flexible, extensible structure.
+
 <br>
 🧱 Project Structure
 
